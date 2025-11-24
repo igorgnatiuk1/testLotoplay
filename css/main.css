@@ -641,14 +641,14 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1200px) {
-  .connection__box {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
+@media screen and (min-width: 768px) {
+  .connection__box--input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -760,12 +760,11 @@ textarea:placeholder-shown {
 
 .connection__map iframe {
   border-radius: 8px;
-  max-width: 440px;
-  height: 250px;
 }
 @media screen and (min-width: 768px) {
   .connection__map iframe {
-    width: 510px;
+    width: 550px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -783,7 +782,7 @@ textarea:placeholder-shown {
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 25px;
-  text-align: center;
+  text-align: start;
 }
 
 .history__box {
