@@ -1,0 +1,59 @@
+body {
+  background-color: #000000;
+}
+html{
+  scroll-behavior: smooth;
+}
+.logo {
+  
+  font-weight: 800;
+  font-size: 40px;
+}
+.title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 1;
+  color: $colorWhite;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+}
+.button {
+  cursor: pointer;
+  background-color: $colorPink;
+  border-radius: 10px;
+  color: $colorWhite;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 600;
+     transition: background-color 200ms linear;
+        transition: color 200ms linear;
+  @media screen and (min-width: 768px) {
+    padding: 8px 10px;
+  
+}
+@media screen and (min-width: 1200px) {
+   padding: 10px 15px;
+  font-size: 13px;
+}
+&:hover,
+&:focus{
+background-color: $colorWhite;
+color: $colorPink;
+}
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

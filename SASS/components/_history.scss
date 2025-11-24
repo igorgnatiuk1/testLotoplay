@@ -1,0 +1,43 @@
+.history {
+  padding: 60px 0;
+
+  background: linear-gradient(
+    315deg,
+    rgba(242, 70, 27, 0.13) 12%,
+    rgb(28, 44, 58) 96%
+  );
+}
+
+.history__title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.history__box {
+  display: flex;
+}
+.box__text {
+  width: 720px;
+  z-index: 2;
+}
+.history__box .history__text {
+  margin-bottom: 15px;
+}
+.history__img {
+ display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: -13px;
+    width: 327px;
+    height: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 465px;
+    height: 175px;
+  }
+}
+.history__text:not(:last-child) {
+  margin-bottom: 15px;
+}

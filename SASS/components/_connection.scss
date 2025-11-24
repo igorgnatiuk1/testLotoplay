@@ -1,0 +1,117 @@
+.connection {
+  padding: 60px 0;
+  background: linear-gradient(
+    145deg,
+    rgba(242, 70, 27, 0.13) 12%,
+    rgb(28, 44, 58) 96%
+  );
+}
+.connection__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.connection__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.connection__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: $colorGray;
+  margin-bottom: 20px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+
+  &:nth-child(1) {
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+}
+form {
+  max-width: 450px;
+  height: 200px;
+  display: block;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    width: 550px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+input {
+  border: 1px solid $colorBorder;
+  border-radius: 8px;
+  background-color: rgb(24, 24, 31);
+  color: #e2e2e2;
+
+  width: 262px;
+  padding: 8px;
+  margin-top: 5px;
+}
+.textarea {
+  margin-top: 15px;
+}
+textarea {
+  border: 1px solid $colorBorder;
+  border-radius: 8px;
+  background-color: rgb(24, 24, 31);
+  max-width: 440px;
+  height: 80px;
+  padding: 8px;
+  margin-top: 5px;
+  color: #e2e2e2;
+  @media screen and (min-width: 768px) {
+    width: 550px;
+  }
+}
+textarea:placeholder-shown {
+  font-weight: 500;
+  font-size: 15px;
+}
+.connection__button {
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+.connection__map {
+  border: 1px solid $colorBorder;
+  border-radius: 8px;
+  background-color: rgb(24, 24, 31);
+  
+  padding: 20px;
+  margin-top: 140px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+  }
+}
+.connection__map--title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.connection__map iframe {
+  border-radius: 8px;
+  max-width: 440px;
+  height: 250px;
+  @media screen and (min-width: 768px) {
+    width: 510px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+  }
+}

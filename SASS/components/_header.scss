@@ -1,0 +1,162 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 10px 25px;
+}
+.header__list {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.header__item:not(:last-child) {
+  margin-right: 15px;
+}
+.header__item {
+   transition: color 200ms linear;
+  &:hover,
+  &:focus {
+    color: $colorPink;
+  }
+}
+.header__logo {
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 200ms linear;
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 15px;
+  }
+  &:hover,
+  &:focus {
+    color: $colorPink;
+   
+  }
+}
+.header__link {
+  padding: 25px 0;
+}
+.button__svg {
+  display: block;
+  fill: white;
+
+  transition: fill 200ms linear;
+}
+.header-open {
+  display: block;
+  z-index: 3;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-open .close {
+  display: none;
+}
+
+.header-open .open {
+  display: block;
+}
+
+.header-open.is-open .open {
+  display: none;
+}
+
+.header-open.is-open .close {
+  display: block;
+}
+.open, .close {
+  fill: white;
+}
+
+.mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 350px;
+  border-bottom-left-radius: 30px;
+  background-color: #18181f;
+  transform: translateX(100%);
+  transition: transform 200ms linear;
+  padding: 20px;
+  z-index: 2;
+}
+
+.mobile.is-open {
+  @media screen and (max-width: 767px) {
+    transform: translateX(0);
+  }
+}
+
+.mobile__list {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.mobile__box {
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+  right: 40px;
+}
+.mobile__adress--tel {
+  display: block;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.15;
+  font-style: normal;
+  margin-bottom: 15px;
+  transition: color 200ms linear;
+}
+
+.mobile__item {
+  color: $colorWhite;
+  transition: color 200ms linear;
+}
+
+.mobile__adress--mail {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.17;
+  font-style: normal;
+}
+
+.mobile__adress {
+  color: $colorWhite;
+}
+
+.mobile__network {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 430px;
+  justify-content: space-between;
+}
+
+.mobile__network--item {
+  margin-top: 10px;
+  border-style: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: color 200ms linear, border 200ms linear;
+}
+.mobile__link {
+  padding: 5px;
+}
+
+.mobile__network--link {
+  display: block;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+}

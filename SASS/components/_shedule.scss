@@ -1,0 +1,57 @@
+.schedule {
+  padding: 40px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+}
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table__box {
+  border: 2px solid $colorBorder;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.table caption {
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 15px;
+
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+.table td {
+  color: $colorGray;
+  background-color: rgb(24, 24, 31);
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px;
+  border-top: 2px solid $colorBorder;
+  width: calc(100% / 4);
+}
+.table th {
+  padding: 8px;
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 15px;
+  }
+}
+.table caption,
+.table th {
+  background-color: rgb(37, 37, 48);
+}
