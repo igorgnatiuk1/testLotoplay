@@ -154,13 +154,13 @@
                                 <th scope="col">Місто / Заклад</th>
                                 <th scope="col">К-сть місць</th>
                                 <th scope="col">Дата і час</th>
-                                <th scope="col">Дія</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>Київ - Docker-G Pub</td>
+                                <td>Київ — Docker-G Pub</td>
                                 <td>250</td>
                                 <td>25.10.2025, 19:00</td>
                                 <td>
@@ -171,7 +171,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Львів - !FESTrepublic</td>
+                                <td>Львів — !FESTrepublic</td>
                                 <td>400</td>
                                 <td>01.11.2025, 20:00</td>
                                 <td>
@@ -182,7 +182,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Одеса - Зелен театр</td>
+                                <td>Одеса — Зелен театр</td>
                                 <td>700</td>
                                 <td>09.11.2025, 19:30</td>
                                 <td>
@@ -193,7 +193,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Харків - ArtZavod</td>
+                                <td>Харків — ArtZavod</td>
                                 <td>500</td>
                                 <td>16.11.2025, 19:00</td>
                                 <td>
@@ -230,8 +230,8 @@
             </div>
         </section>
         <section class="history" id="history">
-            <h2 class="history__title">Наша історія</h2>
             <div class="container">
+                <h2 class="history__title">Наша історія</h2>
                 <div class="history__box">
                     <div class="box__text">
                         <p class="history__text">«Грим та Грім» народився з бажання створювати музику, яка відчувається
@@ -274,7 +274,8 @@
                 <p class="connection__text">Хочеш заказати виступ або маєш питання? Пиши!</p>
                 <div class="connection__box">
                     <form action="/sending" method="GET">
-                        <label class="label">
+                       <div class="connection__box--input">
+                         <label class="label">
                             Ім'я
                             <input type="text" required name="username" class="input">
                         </label>
@@ -282,6 +283,7 @@
                             Email
                             <input type="email" required name="email" class="input">
                         </label>
+                       </div>
                         <label class="textarea label">
                             Повідомлення
                             <textarea required name="feedback" rows="5"

@@ -1,24 +1,24 @@
 const arrayConcert = [
   {
-    city: "Київ - Docker-G Pub",
+    city: "Київ — Docker-G Pub",
     total: 250,
     date: `25.10.2025, 19:00`,
     id: 1,
   },
   {
-    city: "Львів - !FESTrepublic",
+    city: "Львів — !FESTrepublic",
     total: 400,
     date: `01.11.2025, 20:00`,
     id: 2,
   },
   {
-    city: "Одеса - Зелен театр",
+    city: "Одеса — Зелен театр",
     total: 700,
     date: `01.11.2025, 20:00`,
     id: 3,
   },
   {
-    city: "Харків - ArtZavod",
+    city: "Харків — ArtZavod",
     total: 500,
     date: `16.11.2025, 19:00`,
     id: 4,
